@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    main{
+        margin: 30px auto ;
+        width: 900px;
+        
+        background-color: white;
+        padding-bottom: 20px;
+        border: 1px solid gray;        
+        box-shadow: 2px 2px 5px 4px grey;
+    }
+    table,th,td{
+        border: 1px solid black;
+    }
+    table{
+        width: 800px;
+        margin: 30px auto;
+        border-collapse: collapse;
+    }
+    th{
+        font-weight: normal;
+    }
+    td{
+        height: 30px;
+        text-align: center;
+    }
+    h1{
+        display: inline-block;
+        border-bottom: 1px solid black;
+        padding: 5px;
+       
+        font-weight: normal;
+        
+        margin-bottom: 10px;
+    }
+    caption{
+        margin-bottom: 30px;
+        position: relative;
+    }
+    #first{
+        margin-top: 10px;
+        display: block;
+        margin-left: 26px;
+        
+    }
+    #second{
+        /* display: inline-block; */
+       
+        position: absolute;
+        
+        right: 0px;
+        top: 70px;
+    }
+  
+    
+    .wl,.ws{
+        width: 60px;
+    }
+    .wh{
+        width: 120px;
+    }
+   
+    #audit,#tell{
+        display: inline-block;
+      
+    }
+    #audit{
+        
+        margin-left: 150px;
+    }
+    #tell{
+        margin-left: 400px;
+    }
+    #money{
+        text-align: left;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption>
+            <h1>费&nbsp;用&nbsp;报&nbsp;销&nbsp;单</h1>
+            <span id="first">报销日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日</span>
+            <span id="second">附件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张</span>
+            
+            </caption>
+          
+            <tr>
+                <td colspan="3" >费用项目</td>
+                
+                <td>类别</td>
+                <td>金额</td>
+                <td colspan="2" rowspan="2"class="ws">负责人（签章）</td>
+                
+                <td colspan="2" rowspan="2" class="wl"></td>
+            
+            </tr> 
+            <tr>
+                <td colspan="3"></td>
+                
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                
+                <td></td>
+                <td></td>
+                <td colspan="2" rowspan="2"class="ws">审&nbsp;查&nbsp;意&nbsp;见</td>
+                
+                <td colspan="2" rowspan="2" class="wl"></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+               
+                <td></td>
+                <td></td>
+   
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                
+                <td></td>
+                <td></td>
+                <td colspan="2" rowspan="2"class="ws">报销人（签章）</td>
+                
+                <td colspan="2" rowspan="2" class="wl"></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                
+                <td></td>
+                <td></td>
+             
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+               
+                <td></td>
+                <td></td>
+                <td colspan="2" id="money">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥</td>
+                
+                <td colspan="2"></td>
+               
+            </tr>
+            <tr>
+                <td colspan="9">核实金额（大写）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;佰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拾&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;佰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拾&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥</td>
+                
+ 
+            </tr>
+            <tr>
+               <table>
+                   <tr>
+                       <td>借款额</td>
+                       <td class="wh"></td>
+                       <td>应退金额</td>
+                       <td class="wh"></td>
+                       <td>应补金额</td>
+                       <td class="wh"></td>
+                   </tr>
+               </table>
+            </tr>
+         
+
+        </table>
+        <footer>
+            <div id="audit">审核</div>
+            <div id="tell">出纳</div>
+        </footer>
+    </main>
+</body>
+</html>
